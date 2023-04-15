@@ -29,7 +29,6 @@ const BottomTabs = () => {
       {/* The screens */}
       <Tab.Screen name="Home" component={Home}
         options={{
-          // title: 'Welcome',
           tabBarIcon: ({ focused }) => (<View style={styles.labelIconContainer}>
             <Image
               source={require("../assets/Vector3xcopy2.png")}
@@ -38,7 +37,7 @@ const BottomTabs = () => {
             />
             <View style={styles.labelContainer}>
               <Text style={focused ? styles.focusedLabel : styles.unfocusedLabel}> Home </Text>
-              <View style={focused ? { backgroundColor: "#f9a915", width: 20, height: 2 } : {}}></View>
+              <View style={focused ? { backgroundColor: "#ff8223", width: 20, height: 2 } : {}}></View>
             </View>
           </View>)
 
@@ -46,7 +45,7 @@ const BottomTabs = () => {
       />
       <Tab.Screen name="Reservation" component={Reservation}
         options={{
-          // title: 'Welcome',
+          title: 'Your Reservation',
           tabBarIcon: ({ focused }) => (<View style={styles.labelIconContainer}>
             <Image
               source={require("../assets/Vector3xcopy3.png")}
@@ -55,7 +54,7 @@ const BottomTabs = () => {
             />
             <View style={styles.labelContainer}>
               <Text style={focused ? styles.focusedLabel : styles.unfocusedLabel}> Reservation </Text>
-              <View style={focused ? { backgroundColor: "#f9a915", width: 20, height: 2 } : {}}></View>
+              <View style={focused ? { backgroundColor: "#ff8223", width: 20, height: 2 } : {}}></View>
             </View>
           </View>)
 
@@ -72,7 +71,7 @@ const BottomTabs = () => {
             />
             <View style={styles.labelContainer}>
               <Text style={focused ? styles.focusedLabel : styles.unfocusedLabel}> Favourite </Text>
-              <View style={focused ? { backgroundColor: "#f9a915", width: 20, height: 2 } : {}}></View>
+              <View style={focused ? { backgroundColor: "#ff8223", width: 20, height: 2 } : {}}></View>
             </View>
           </View>)
 
@@ -116,13 +115,13 @@ const styles = StyleSheet.create({
   },
   focusedLabel: {
     fontSize: 16,
-    color: "#f9a915",
+    color: "#ff8223",
     fontWeight: "bold"
   },
   focusedIcon: {
     width: 30,
     height: 30,
-    tintColor: "#f9a915"
+    tintColor: "#ff8223"
   },
   unfocusedIcon: {
     width: 20,

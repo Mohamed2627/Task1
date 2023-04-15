@@ -6,6 +6,7 @@ const Header = () => {
     return (
         <View style={styles.headerContainer}>
             <Image
+                resizeMode='contain'
                 style={styles.backgroundImage}
                 source={require('../assets/restaurant.png')}
             />
@@ -28,21 +29,23 @@ const Header = () => {
 const styles = StyleSheet.create({
     headerContainer: {
         alignItems: "center",
+        justifyContent: "center",
         width: "100%",
-        height: 150,
-        position: "relative"
+        height: 200,
+        position: "relative",
+        marginBottom: 10
     },
     backgroundImage: {
         width: deviceWidth * 0.9,
-        height: "100%",
+        height: "80%",
         borderRadius: 20
     },
     heartIconWraper: {
         alignItems: "center",
         justifyContent: "center",
         position: "absolute",
-        top: 10,
-        right: 60,
+        top: 25,
+        right: 20,
         width: 50,
         height: 50,
         backgroundColor: "white",
@@ -53,8 +56,19 @@ const styles = StyleSheet.create({
         height: 30,
     },
     textWraper: {
-
+        alignItems: "center",
+        justifyContent: "center",
+        position: "absolute",
+        bottom: 25,
+        right: 20,
+        width: 60,
+        height: 20,
+        backgroundColor: "white",
+        borderRadius: 10,
     },
+    text: {
+        fontWeight: "bold"
+    }
 
 });
 
